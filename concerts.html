@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conciertos</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/miree-logo.png" alt="Logo Miree" height="39,125px" width="85,375px"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mydropdown">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.html">Sobre mí</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="concerts.html">Conciertos</a></li>
+                    <div class="navbar-brand">
+                        <div class="g-ytsubscribe" data-channelid="UCYEt19P3rd3n3MsjyOOna5A" data-layout="default" data-count="default"></div>
+                    </div>
+                    <div class="navbar-brand"><a href="https://twitter.com/miree_music?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @miree_music</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="navbar-brand"><iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3ltRp2hE6eDAHQlkwWfpxD&size=basic&theme=light" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" style="margin-top:50px">
+        <div className="cuerpo">
+
+            <h1>Conciertos</h1>
+
+            <!--<div id="app">
+                <v-app id="inspire">
+                    <v-container fluid grid-list-md>
+                        <v-card-title> Aquí podréis encontrar un listado de mis conciertos. Podéis usar el filtro para encontrar alguno en concreto:
+                        </v-card-title>
+
+
+                        <v-data-iterator :items="items" :items-per-page.sync="itemsPerPage" :page="page" :search="search" :sort-by="sortBy.toLowerCase()" :sort-desc="sortDesc" hide-default-footer>
+
+                            <template v-slot:header>
+                      <v-toolbar
+                        dark
+                        color="pink darken-3"
+                        class="mb-1"
+                      >
+                        <v-text-field
+                          v-model="search"
+                          clearable
+                          flat
+                          solo-inverted
+                          hide-details
+                          prepend-inner-icon="search"
+                          label="Filtra"
+                        ></v-text-field>
+                        <template v-if="$vuetify.breakpoint.mdAndUp">
+                          <v-spacer></v-spacer>
+                          <v-select
+                            v-model="sortBy"
+                            flat
+                            solo-inverted
+                            hide-details
+                            :items="keys"
+                            prepend-inner-icon="search"
+                            label="Ordena por"
+                          ></v-select>
+                          <v-spacer></v-spacer>
+                          <v-btn-toggle
+                            v-model="sortDesc"
+                            mandatory
+                          >
+                            <v-btn
+                              large
+                              depressed
+                              color="pink"
+                              :value="false"
+                            >
+                              <v-icon>arrow_upward</v-icon>
+                            </v-btn>
+                            <v-btn
+                              large
+                              depressed
+                              color="pink"
+                              :value="true"
+                            >
+                              <v-icon>arrow_downward</v-icon>
+                            </v-btn>
+                          </v-btn-toggle>
+                        </template>
+                            </v-toolbar>
+                            </template>
+
+                            <template v-slot:default="props">
+                                <v-row>
+                                    <v-col
+                      v-for="item in props.items"
+                      :key="item.event"
+                        xs12
+                        sm6
+                        md4
+                        lg3
+                      >
+                        <v-card>
+                            <v-card-title class="subheading font-weight-bold">{{ item.event }}</v-card-title>
+                          <v-list dense>
+                              <v-list-item
+                              v-for="(key, index) in filteredKeys"
+                              :key="index"
+                              :color="sortBy === key ? 'pink darken-3' : 'white'"
+                            >
+                              <v-list-item-content>{{ key }}: </v-list-item-content>
+                              <v-list-item-content class="align-end">{{ item[key.toLowerCase()] }}</v-list-item-content>
+                            </v-list-item>
+                        </v-card>         
+                      </v-col>
+                    </v-row>
+                  </template>
+
+                            <template v-slot:footer>
+                    <v-layout mt-2 wrap align-center justify-center>
+                      <span class="grey--text">Items por página</span>
+                      <v-menu offset-y>
+                        <template v-slot:activator="{ on }">
+                          <v-btn
+                            dark
+                            text
+                            color="primary"
+                            class="ml-2"
+                            v-on="on"
+                          >
+                            {{ itemsPerPage }}
+                            <v-icon>keyboard_arrow_down</v-icon>
+                          </v-btn>
+                        </template>
+                            <v-list>
+                                <v-list-item v-for="(number, index) in itemsPerPageArray" :key="index" @click="updateItemsPerPage(number)">
+                                    <v-list-item-title>{{ number }}</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
+                            </v-menu>
+
+                            <v-spacer></v-spacer>
+
+                            <span class="mr-4
+                        grey--text">
+                        Página {{ page }} de {{ numberOfPages }}
+                      </span>
+                            <v-btn fab dark color="pink darken-3" class="mr-1" @click="formerPage">
+                                <v-icon>keyboard_arrow_left</v-icon>
+                            </v-btn>
+                            <v-btn fab dark color="pink darken-3" class="ml-1" @click="nextPage">
+                                <v-icon>keyboard_arrow_right</v-icon>
+                            </v-btn>
+                            </v-layout>
+                            </template>
+                        </v-data-iterator>
+                    </v-container>
+
+                </v-app>
+            </div>-->
+
+
+
+            <div id="app">
+                <v-app id="inspire">
+                    <v-container fluid>
+                        <v-data-iterator :items="items" :items-per-page.sync="itemsPerPage" :footer-props="{ itemsPerPageOptions }">
+                            <template v-slot:default="props">
+                      <v-row>
+                        <v-col
+                          v-for="item in props.items"
+                          :key="item.event"
+                          cols="12"
+                          sm="6"
+                          md="4"
+                          lg="3"
+                        >
+                          <v-card>
+                            <v-card-title><h4>{{ item.event }}</h4></v-card-title>
+                            <v-divider></v-divider>
+                            <v-list dense>
+                                <v-list-item
+                                v-for="(key, index) in filteredKeys"
+                                :key="index"
+                                :color="sortBy === key ? 'pink darken-3' : 'white'"
+                              >
+                              <v-list-item-content>{{ key }}: </v-list-item-content>
+                              <v-list-item-content class="align-end">{{ item.key }}</v-list-item-content>
+                            </v-list-item>
+                            </v-list>
+                          </v-card>
+                        </v-col>
+                      </v-row>
+                    </template>
+                        </v-data-iterator>
+                    </v-container>
+                </v-app>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="assets/scripts/concertTable.js"></script>
+</body>
+
+</html>

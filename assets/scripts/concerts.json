@@ -1,0 +1,190 @@
+{
+    "concerts": [
+        {
+            "event": "Akihabara Deep",
+            "year": "2015",
+            "city": "Sant Adrià de Besòs",
+            "country": "España"
+         },
+        {
+            "event": "Akihabara Deep",
+            "year": "2016",
+            "city": "Sant Adrià de Besòs",
+            "country": "España"         
+         },
+        {
+            "event": "Akihabara Deep",
+            "year": "2017",
+            "city": "Sant Adrià de Besòs",
+            "country": "España"
+         },
+        {
+            "event": "Akihabara Deep",
+            "year": "2018",
+            "city": "Sant Adrià de Besòs",
+            "country": "España"
+         },
+        {
+            "event": "Carnaval Otaku Girona",
+            "year": "2016",
+            "city": "Girona",
+            "country": "España"
+         },
+        {
+           "event": "Cartagena se Re-Manga",
+           "year": "2019",
+           "city": "Cartagena",
+           "country": "España"
+         },
+         {
+            "event": "ExpOtaku Tarragona",
+            "year": "2015",
+            "city": "Tarragona",
+            "country": "España"
+         },
+        {
+            "event": "ExpOtaku Tarragona",
+            "year": "2016",
+            "city": "Tarragona",
+            "country": "España"
+         },
+        {
+            "event": "ExpOtaku Tarragona",
+            "year": "2017",
+            "city": "Tarragona",
+            "country": "España"
+         },
+         {
+             "event": "Fancon, Festival Internacional de Ocio Alternativo",
+             "year": "2016",
+             "city": "Palau-solità i Plegamans",
+             "country": "España"
+          },
+          {
+              "event": "Gokuraku, el paradís de l'otaku",
+              "year": "2015",
+              "city": "Barcelona",
+              "country": "España"
+           },
+          {
+              "event": "Gokuraku, el paradís de l'otaku",
+              "year": "2016",
+              "city": "Barcelona",
+              "country": "España"
+           },
+           {
+            "event": "Japan Weekend de Barcelona",
+            "year": "2015",
+            "city": "La Farga de L'Hospitalet",
+            "country": "España"
+         },
+        {
+            "event": "Japan Weekend de Barcelona",
+            "year": "2016",
+            "city": "La Farga de L'Hospitalet",
+            "country": "España"
+         },
+        {
+            "event": "Japan Weekend de Barcelona",
+            "year": "2017",
+            "city": "La Farga de L'Hospitalet",
+            "country": "España"
+         },
+        {
+            "event": "Japan Weekend de Barcelona",
+            "year": "2018",
+            "city": "La Farga de L'Hospitalet",
+            "country": "España"
+         },
+        {
+            "event": "Japan Weekend de Barcelona",
+            "year": "2019",
+            "city": "La Farga de L'Hospitalet",
+            "country": "España"
+         },
+         {
+             "event": "Japan Weekend de Madrid",
+             "year": "2017",
+             "city": "Madrid",
+             "country": "España"
+          },
+          {
+            "event": "K-Pop World Festival España",
+            "year": "2015",
+            "city": "Madrid",
+            "country": "España"
+           },
+          {
+            "event": "K-Pop World Festival España",
+            "year": "2019",
+            "city": "Madrid",
+            "country": "España"
+           },
+           {
+               "event": "Kawaii Ikebukuro",
+               "year": "2017",
+               "city": "Santa Perpetua De Mogoda",
+               "country": "España"
+            },
+           {
+               "event": "Kawaii Ikebukuro",
+               "year": "2018",
+               "city": "Santa Perpetua De Mogoda",
+               "country": "España"
+            },
+            {
+                "event": "Nodojiman The World",
+                "year": "2016",
+                "city": "Tokyo",
+                "country": "Japón"
+             },
+        {
+          "event": "Salón del Manga de Barcelona",
+          "year": "2015",
+          "city": "Barcelona",
+          "country": "España"
+       },
+      {
+          "event": "Salón del Manga de Barcelona",
+          "year": "2016",
+          "city": "Barcelona",
+          "country": "España"
+        },
+      {
+          "event": "Salón del Manga de Barcelona",
+          "year": "2017",
+          "city": "Barcelona",
+          "country": "España"
+       },
+      {
+          "event": "Salón del Manga de Barcelona",
+          "year": "2018",
+          "city": "Barcelona",
+          "country": "España"
+       },
+      {
+          "event": "VI Jornadas de Manga y Anime de Blanes",
+          "year": "2015",
+          "city": "Blanes",
+          "country": "España"
+       },
+      {
+        "event": "Vicòmic, Festival del còmic i les altres ciències de la ficció de Vic",
+        "year": "2018",
+        "city": "Vic",
+        "country": "España"
+     },
+      {
+          "event": "Xics Festival, Festival Infantil Musical del Moianès",
+          "year": "2017",
+          "city": "Moià",
+          "country": "España"
+       },
+      {
+          "event": "Xipifesta",
+          "year": "2019",
+          "city": "Moià",
+          "country": "España"
+       }
+    ]
+  }

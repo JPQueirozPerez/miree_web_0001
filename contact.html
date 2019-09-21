@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>-->
+    <link href="assets/styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="assets/images/miree-logo.png" alt="Logo Miree" height="39.125px" width="85.375px"></a>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown">
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="mydropdown">
+                <ul class="nav navbar-nav">
+                    <li><a href="about.html">Sobre mí</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="concerts.html">Conciertos</a></li>
+                    <div class="navbar-brand">
+                        <div class="g-ytsubscribe" data-channelid="UCYEt19P3rd3n3MsjyOOna5A" data-layout="default" data-count="default"></div>
+                    </div>
+                    <div class="navbar-brand"><a href="https://twitter.com/miree_music?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @miree_music</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </div>
+                    <div class="navbar-brand"><iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:3ltRp2hE6eDAHQlkwWfpxD&size=basic&theme=light" width="200" height="25" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe></div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top:50px">
+        <div className="cuerpo">
+
+            <h1>Contacto</h1>
+
+            <p><span class="error">* campo necesario</span></p>
+            <div class="alert">Tu mensaje se ha enviado</div>
+            <div>
+                <form id="contactForm" action="https://formspree.io/jpqueirozperez@gmail.com" method="POST">
+                    <label for="name">Nombre</label><span class="error">* </span>
+                    <input type="text" id="name" name="name" value="" placeholder="Tu nombre..." required>
+
+                    <label for="email">Correo</label><span class="error">* </span>
+                    <input type="email" id="email" name="email" value="" placeholder="Tu correo..." required>
+
+                    <label for="subject">Asunto</label><span class="error">* </span>
+                    <input type="text" id="subject" name="subject" value="" placeholder="Asunto del mensaje..." required>
+
+                    <label for="message">Mensaje</label><span class="error">* </span><br>
+                    <textarea id="message" name="message" rows="5" placeholder="Tu mensaje..." required></textarea>
+
+                    <!----<input type="submit" name="submit" value="Enviar" class="btn btn1"> -->
+                    <button class="btn" type="submit" name="submit">Enviar</button>
+                </form>
+            </div>
+
+
+            <strong>Para envío de cartas o regalos: Miree, Apartado 17 de correos, MOIÀ 08180, província de Barcelona, España</strong>
+            <script type="text/javascript" src="assets/scripts/mobile.js"></script>
+        </div>
+    </div>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+    <script src="assets/scripts/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+{
+    "events": [
+      {
+          "event": "Girocòmic",
+          "direction": "https://www.google.com/maps/place/Giroc%C3%B2mic+-+Fira+del+c%C3%B2mic,+el+manga,+la+il%C2%B7lustraci%C3%B3+i+l'entreteniment+de+Girona/@41.9850824,2.8109915,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x1165fcf2b43fc081!8m2!3d41.9850824!4d2.8131802",
+          "city": "Girona",
+          "day": "13/10",
+          "hour": "14:00h-15:00h"
+       },
+      {
+          "event": "Salón del Manga de Murcia",
+          "direction": "https://www.google.com/maps/place/Auditorio+y+Centro+de+Congresos+V%C3%ADctor+Villegas/@37.9834878,-1.116051,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xe3f05dda709d0c1a!8m2!3d37.9834878!4d-1.1138623",
+          "city": "Murcia",
+          "day": "*Por definir*",
+          "hour": "*Por definir*"
+        },
+      {
+          "event": "Salón del Manga de Barcelona",
+          "direction": "https://www.google.com/maps/place/Fira+Barcelona+Montju%C3%AFc/@41.3738827,2.150208,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7d0d287990636de7!8m2!3d41.3738827!4d2.1523967",
+          "city": "Barcelona",
+          "day": "*Por definir*",
+          "hour": "*Por definir*"
+      },
+      {
+          "event": "Jigoku Kpop Stars",
+          "direction": "https://www.google.com/maps/place/Centro+Galicia+Buenos+Aires/@-34.6087447,-58.4046956,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x1d345ebda36b1095!8m2!3d-34.6087447!4d-58.4025069",
+          "city": "Buenos Aires",
+          "day": "*Por definir*",
+          "hour": "*Por definir*"
+      }
+    ]
+  }
