@@ -1,11 +1,11 @@
 //Initialize Firebase
 var firebaseConfig = {
-    apiKey: "AIzaSyB9ubDZmk37yAK9oQsOVMt3z6sSd030wng",
-    authDomain: "miree-web-0001.firebaseapp.com",
-    databaseURL: "https://miree-web-0001.firebaseio.com",
-    projectId: "miree-web-0001",
-    storageBucket: "miree-web-0001.appspot.com",
-    messagingSenderId: "249331112930"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
   };
   firebase.initializeApp(firebaseConfig);
 
